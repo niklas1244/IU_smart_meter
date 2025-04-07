@@ -1,0 +1,26 @@
+version: "3.1"
+
+networks:
+  server:
+    external: false
+    driver: bridge
+
+services:
+  webserver:
+    build: './app'
+    container_name: app
+    restart: always
+    networks:
+      - server
+    depends_on:
+      - db
+    ports:
+      - "80:80"
+      - "443:443"
+
+  db:
+    build: './db'
+    container_name: db
+    restart: always
+    networks:
+      - server

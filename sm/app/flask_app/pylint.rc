@@ -1,0 +1,8 @@
+[BASIC]
+ignore-patterns=(.)*_test\.py,test_(.)*\.py
+
+[FORMAT]
+max-line-length = 120
+
+[MESSAGES CONTROL]
+disable = broad-exception-raised, broad-exception-caught, import-error, fixme, trailing-whitespace, too-many-return-statements, too-many-arguments, duplicate-code, too-many-positional-arguments, too-many-locals, too-few-public-methods

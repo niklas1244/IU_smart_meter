@@ -1,0 +1,237 @@
+.dashboard-container {
+    background-color: #f9f9f9;
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    padding: 20px;
+    width: 100vw;
+    margin-top: 10vh;
+    color: black;
+}
+
+.menu {
+    width: 25%;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 10px;
+    color: black;
+    background: #e0e0e0;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background: #d0d0d0;
+}
+
+.profileDisplay {
+    flex: 1;
+}
+
+.profileBox {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 95px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.itemRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.profileHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.userNameAccountOverview {
+    font-weight: bold;
+    font-size: 36px;
+    color: #777;
+}
+
+.userId {
+    font-size: 36px;
+    color: #777;
+}
+
+.itemImage {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: auto;
+}
+
+.itemDetails {
+    color: #464646;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.userName {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.personalDetailsCard {
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.personalDetailsCard h2 {
+    font-size: 24px;
+    color: #388e3c;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.userInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.infoRow {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.infoRow label {
+    color: black;
+}
+
+.infoRow input {
+    padding: 8px;
+    color: black;
+    border: .5px solid gray;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+.infoRow input:focus {
+    border-color: black;
+    box-shadow: 0 0 5px rgba(102, 187, 106, 0.5);
+    outline: none;
+}
+
+.infoRow select {
+    padding: 12px;
+    border: 1px solid #a5d6a7;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #388e3c;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    appearance: none;
+    cursor: pointer;
+}
+
+.infoRow select:focus {
+    border-color: #66bb6a;
+    box-shadow: 0 0 5px rgba(102, 187, 106, 0.5);
+    outline: none;
+}
+
+.infoRow select:hover {
+    background-color: #f9f9f9;
+}
+
+.errorMessage {
+    color: red;
+}
+
+.saveButton {
+    grid-column: span 2;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    align-self: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.saveButton:hover {
+    background-color: #4b4b4b;
+}
+
+.saveButton:active {
+    background-color: #727272;
+}
+
+.logoutButton {
+    margin-top: 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logoutButton:hover {
+    background-color: #d32f2f;
+}
+
+.inventory-container {
+    padding: 20px;
+}
+.inventory-container h2 {
+    margin-bottom: 20px;
+}
+.inventory-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.inventory-container th, .inventory-container td, .inventory-container label {
+    border: 1px solid #ddd;
+    color: green;
+    padding: 8px;
+    text-align: left;
+}
+
+.inventory-container button {
+    color: white;
+}
+
+.inventory-container th {
+    background-color: #f4f4f4;
+    color: black;
+    font-weight: bold;
+}
